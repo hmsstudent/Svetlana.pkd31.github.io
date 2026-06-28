@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+
 <html lang="ru">
 <head>
 <meta charset="UTF-8">
@@ -192,6 +192,15 @@
   section{padding:8vh 0;}
   .eyebrow{font-family:'Caveat',cursive;font-size:24px;color:var(--terra);text-align:center;display:block;margin-bottom:2px;}
   .h-sec{font-family:'Marck Script',cursive;font-weight:400;font-size:clamp(28px,5.5vw,44px);color:var(--wine);text-align:center;margin:0 0 28px;}
+
+  /* фасад видео (надёжно открывает ролик на YouTube) */
+  .reel .ytfacade{cursor:pointer;}
+  .reel .ytfacade{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;text-decoration:none;}
+  .reel .poster{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;}
+  .reel .ytfacade::before{content:"";position:absolute;inset:0;background:rgba(20,14,10,.28);transition:background .3s;}
+  .reel .ytfacade:hover::before{background:rgba(20,14,10,.12);}
+  .reel .ytfacade .play{position:relative;z-index:2;transition:transform .3s;}
+  .reel .ytfacade:hover .play{transform:scale(1.08);}
 </style>
 </head>
 <body>
@@ -267,18 +276,18 @@
     <span class="eyebrow reveal">наши кадры</span>
     <h2 class="h-sec reveal">Моменты, которые мы сохранили</h2>
     <div class="wall reveal">
-      <figure class="polaroid"><span class="pin"></span><img class="pic" src="фоточки/851oV9EzLZrh5P3l3fcgAzQ_AOzWJLkb8KJVkuT0xCozJCj209uLqs6xosvfgl6dMmvodwgoROolGWewPhPKQr9x.jpg" alt="первый день"><figcaption class="cap">первый день</figcaption></figure>
-      <figure class="polaroid"><span class="pin"></span><img class="pic" src="фоточки/PG2oljnW8tw4RbJyBIXAMZ5py59TvR62BIzfAgOl5buyrLxxz7szQLn11O64ak8DYDdueQYTavV3YlVg32DgyzWn.jpg" alt="на практике"><figcaption class="cap">на практике</figcaption></figure>
+      <figure class="polaroid"><span class="pin"></span><img class="pic" src="фоточки/photo_2026-06-29_00-07-22.jpg" alt="первый день"><figcaption class="cap">первый день</figcaption></figure>
+      <figure class="polaroid"><span class="pin"></span><img class="pic" src="фоточки/photo_2026-06-29_00-09-23.jpg" alt="на практике"><figcaption class="cap">на практике</figcaption></figure>
       <figure class="polaroid"><span class="pin"></span><img class="pic" src="фоточки/photo_2026-06-28_11-35-12.jpg" alt="наша смена"><figcaption class="cap">наша смена</figcaption></figure>
       <figure class="polaroid"><span class="pin"></span><img class="pic" src="фоточки/photo_2024-10-04_13-26-32.jpg" alt="тот самый момент"><figcaption class="cap">тот самый момент</figcaption></figure>
-      <figure class="polaroid"><span class="pin"></span><img class="pic" src="фоточки/photo_2024-11-05_12-10-37.jpg" alt="всей группой"><figcaption class="cap">всей группой</figcaption></figure>
-      <figure class="polaroid"><span class="pin"></span><img class="pic" src="фоточки/photo_2024-11-21_16-29-58.jpg" alt="на кухне"><figcaption class="cap">на кухне</figcaption></figure>
+      <figure class="polaroid"><span class="pin"></span><img class="pic" src="фоточки/photo_2024-11-05_12-10-37.jpg" alt="всей группой"><figcaption class="cap">ресторанное блюдо</figcaption></figure>
+      <figure class="polaroid"><span class="pin"></span><img class="pic" src="фоточки/photo_2024-11-21_16-29-58.jpg" alt="на кухне"><figcaption class="cap">наша победа</figcaption></figure>
       <figure class="polaroid"><span class="pin"></span><img class="pic" src="фоточки/photo_2025-09-05_21-17-09.jpg" alt="за работой"><figcaption class="cap">за работой</figcaption></figure>
       <figure class="polaroid"><span class="pin"></span><img class="pic" src="фоточки/photo_2025-10-09_15-14-13.jpg" alt="наша команда"><figcaption class="cap">наша команда</figcaption></figure>
       <figure class="polaroid"><span class="pin"></span><img class="pic" src="фоточки/photo_2025-11-03_14-34-11.jpg" alt="будни"><figcaption class="cap">будни</figcaption></figure>
       <figure class="polaroid"><span class="pin"></span><img class="pic" src="фоточки/photo_2025-11-13_15-09-18.jpg" alt="вместе"><figcaption class="cap">вместе</figcaption></figure>
-      <figure class="polaroid"><span class="pin"></span><img class="pic" src="фоточки/photo_2025-11-13_15-09-30.jpg" alt="перед сменой"><figcaption class="cap">перед сменой</figcaption></figure>
-      <figure class="polaroid"><span class="pin"></span><img class="pic" src="фоточки/yXE48ndD5nNO_9VY2suj18GZmWht0wCKboiJD2UTDKf79qDoQdKYofmomSTEdG3HHhmGi7WyINXpC4lt1oUNuCe9.jpg" alt="выпускной"><figcaption class="cap">выпускной</figcaption></figure>
+      <figure class="polaroid"><span class="pin"></span><img class="pic" src="фоточки/photo_2025-11-13_15-09-30.jpg" alt="перед сменой"><figcaption class="cap">люди икс</figcaption></figure>
+      <figure class="polaroid"><span class="pin"></span><img class="pic" src="фоточки/yXE48ndD5nNO_9VY2suj18GZmWht0wCKboiJD2UTDKf79qDoQdKYofmomSTEdG3HHhmGi7WyINXpC4lt1oUNuCe9.jpg" alt="выпускной"><figcaption class="cap">Любим</figcaption></figure>
     </div>
   </section>
 
@@ -287,20 +296,16 @@
     <span class="eyebrow reveal">включите звук</span>
     <h2 class="h-sec reveal">Видео от нас</h2>
     <div class="reel reveal">
-      <div class="screen">
-        <!--
-          ЗАГЛУШКА ВИДЕО. Чтобы вставить ролик:
-          1) Загрузите видео на YouTube как «Доступ по ссылке» (Unlisted).
-          2) Замените блок <div class="ph">…</div> на:
-             <iframe src="https://www.youtube.com/embed/ВАШ_ID" allowfullscreen></iframe>
-        -->
-        <div class="ph">
-          <div class="play"></div>
-          <div>Здесь будет наше видеопоздравление</div>
-          <small>место под ролик с YouTube — добавим позже</small>
+            <div class="screen">
+        <div class="ytfacade" data-id="E4rismfiPG0" onclick="playVideo(this)" title="Нажмите, чтобы посмотреть">
+          <img class="poster" src="https://i.ytimg.com/vi/E4rismfiPG0/hqdefault.jpg" alt="Видеопоздравление от группы">
+          <span class="play"></span>
         </div>
       </div>
     </div>
+    <p style="text-align:center;font-family:'Caveat',cursive;font-size:19px;color:var(--ink-soft);margin-top:12px;">
+      Если видео не открывается — <a href="https://youtu.be/E4rismfiPG0" target="_blank" rel="noopener" style="color:var(--terra);">посмотрите на YouTube ↗</a>
+    </p>
   </section>
 
   <!-- ===================== ПУТЬ ===================== -->
@@ -320,10 +325,10 @@
     <span class="eyebrow reveal">от каждого из нас</span>
     <h2 class="h-sec reveal">Несколько слов на память</h2>
     <div class="notes reveal">
-      <div class="note"><span class="tape2"></span>Спасибо, что верили в меня даже тогда, когда у меня подгорало всё подряд!<span class="who">— [имя]</span></div>
-      <div class="note"><span class="tape2"></span>Ваше «чисто там, где не мусорят» теперь моё правило по жизни.<span class="who">— [имя]</span></div>
-      <div class="note"><span class="tape2"></span>Вы хвалили так, что хотелось стараться ещё больше. Спасибо за это.<span class="who">— [имя]</span></div>
-      <div class="note"><span class="tape2"></span>Буду нести Вашу науку через всю профессию. С теплом и навсегда.<span class="who">— [имя]</span></div>
+      <div class="note"><span class="tape2"></span>Спасибо, что верили в меня даже тогда, когда у меня подгорало всё подряд!<span class="who">— котик с пкд31</span></div>
+      <div class="note"><span class="tape2"></span>Ваше «чисто там, где не мусорят» теперь моё правило по жизни.<span class="who">— кошка с пкд31</span></div>
+      <div class="note"><span class="tape2"></span>Вы хвалили так, что хотелось стараться ещё больше. Спасибо за это.<span class="who">— кошка с пкд31</span></div>
+      <div class="note"><span class="tape2"></span>Буду нести Вашу науку через всю профессию. С теплом и навсегда.<span class="who">— кошка с пкд31</span></div>
     </div>
   </section>
 
@@ -331,7 +336,7 @@
   <section class="finale">
     <div class="reveal">
       <div class="big">Спасибо за всё.<br>Мы Вас не забудем.</div>
-      <div class="small">с любовью — выпуск [год], группа [номер], [название колледжа]</div>
+      <div class="small">с любовью — выпуск 2026, группа пкд31, ВКРСИТ</div>
     </div>
     <div class="hearts" id="hearts"></div>
   </section>
@@ -366,5 +371,18 @@
       hearts.appendChild(s);
     }
   });
+
+  // Inline-проигрывание видео на странице
+  function playVideo(el){
+    var id=el.getAttribute('data-id');
+    var f=document.createElement('iframe');
+    f.src='https://www.youtube.com/embed/'+id+'?autoplay=1&rel=0';
+    f.title='Видеопоздравление';
+    f.allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture';
+    f.setAttribute('allowfullscreen','');
+    f.style.cssText='position:absolute;inset:0;width:100%;height:100%;border:0;';
+    el.replaceWith(f);
+  }
 </script>
-<
+</body>
+</html>
